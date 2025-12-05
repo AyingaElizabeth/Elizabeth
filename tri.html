@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Get to Know Elizabeth – The Legend (Now With 200% More Sparkles)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.emoji-cursor {
+				cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><text x='16' y='22' font-size='20' text-anchor='middle'>😂</text></svg>"), auto;
+			}
+			#confetti-canvas {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 9999;
+			}
+			.dancing-text {
+				display: inline-block;
+				animation: dance 1s infinite alternate;
+			}
+			@keyframes dance {
+				0% { transform: rotate(-5deg); }
+				100% { transform: rotate(5deg); }
+			}
+			#boring-meter {
+				width: 100%;
+				background-color: #ddd;
+				border-radius: 20px;
+				margin: 20px 0;
+			}
+			#boring-progress {
+				width: 5%;
+				height: 30px;
+				background-color: #ff69b4;
+				border-radius: 20px;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+				font-weight: bold;
+				transition: width 2s;
+			}
+			.hover-effect:hover {
+				transform: scale(1.1);
+				transition: transform 0.3s;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body class="is-preload emoji-cursor">
+
+		<!-- Confetti Canvas -->
+		<canvas id="confetti-canvas"></canvas>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">My Portfolio (aka My Digital Kingdom 👑)</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Data Science Wizardry 🔮</a></li>
+							<li class="active"><a href="about.html">Meet the Genius (Me) 😎</a></li>
+							<li><a href="other-skills.html">Web & Mobile Sorcery 🧙‍♀️</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter hover-effect" title="I mostly tweet about snacks"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f hover-effect" title="Where I pretend to be social"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram hover-effect" title="Food pics & code fails"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github hover-effect" title="Where the magic happens"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">April 1, 2025 (Not a joke... probably)</span>
+									<h1><span class="dancing-text">Meet Elizabeth: The Legend</span> 🦄</h1>
+									<p>Data analyst by day, professional snack eater by night. If computers had a favorite human, I'd be in the top 10. <span id="top10">(Click to see my ranking!)</span></p>
+								</header>
+								<div class="image main hover-effect" onclick="surprise()"><img src="images/pic01.jpg" alt="An unnecessarily dramatic picture of me" title="Click me for a surprise!" /></div>
+								
+								<h2>Fun Facts About Me: <button onclick="addRandomFact()" style="font-size: 0.6em;">+ Add Random Fact</button></h2>
+								<ul id="fun-facts">
+									<li>💻 I speak fluent <strong>Python, SQL, and Sarcasm.</strong> (The trifecta of greatness)</li>
+									<li>☕ My blood type is <strong>caffeine-positive.</strong> Doctor's note available upon request.</li>
+									<li>📊 I turn data into <strong>beautiful insights</strong> (and sometimes, memes). Data visualization is my love language.</li>
+									<li>🛠️ If it's broken, I Google how to fix it. If that fails, I pretend it never existed. (Out of sight, out of mind!)</li>
+									<li>🎤 I give TED Talks in the shower (audience: me). Topics include "Why my code worked yesterday" and "The perfect snack-to-code ratio."</li>
+								</ul>
+
+								<h3>Boringness Meter (According to My Friends)</h3>
+								<div id="boring-meter">
+									<div id="boring-progress">5% Boring</div>
+								</div>
+								<p><small>*Disclaimer: This meter spikes to 100% when I explain database normalization at parties.</small></p>
+
+								<p>When I'm not coding, debugging, or explaining to my laptop why it <em>should</em> work, I enjoy:</p>
+								<ul>
+									<li>Binge-watching Netflix (while pretending it's "research")</li>
+									<li>Attempting (and failing) DIY projects (Pinterest lies!)</li>
+									<li>Trying to cook without setting off the smoke alarm (success rate: 23%)</li>
+									<li>Making spreadsheets for <em>everything</em> (even my snack inventory)</li>
+								</ul>
+
+								<h2>My Skills: <small>(Rated by how often they impress my mom)</small></h2>
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<h3>Professional Skills</h3>
+										<ul>
+											<li>✅ Making data tell cool stories <progress value="95" max="100"></progress></li>
+											<li>✅ Developing websites that <em>almost</em> never crash <progress value="82" max="100"></progress></li>
+											<li>✅ Debugging things I broke five minutes earlier <progress value="75" max="100"></progress></li>
+											<li>✅ Copy-pasting from Stack Overflow with style <progress value="110" max="100"></progress></li>
+										</ul>
+									</div>
+									<div class="col-6 col-12-small">
+										<h3>Life Skills</h3>
+										<ul>
+											<li>✅ Finding the perfect GIF for any situation <progress value="98" max="100"></progress></li>
+											<li>✅ Pretending I know what I'm doing <progress value="100" max="100"></progress></li>
+											<li>✅ Napping in weird positions <progress value="87" max="100"></progress></li>
+											<li>✅ Eating pizza without dropping it <progress value="65" max="100"></progress></li>
+										</ul>
+									</div>
+								</div>
+
+								<h2>Let's Connect! (Or Just Send Memes)</h2>
+								<p>If you love <strong>technology, data, or memes</strong>, we should totally be friends. Or if you just need someone to build you something cool—I'm your person.</p>
+								<p>Warning: I respond faster to messages that include:</p>
+								<ul>
+									<li>🐕 Pictures of dogs</li>
+									<li>🍕 Pizza emojis</li>
+									<li>🤣 Actually funny jokes</li>
+									<li>💻 Code snippets that work on the first try (mythical creatures)</li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<h2>Contact Me (or Send Pizza) 🍕</h2>
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name (or nickname, if you're cool)</label>
+										<input type="text" name="name" id="name" placeholder="The coolest person ever" />
+									</div>
+									<div class="field">
+										<label for="email">Email (I promise I won't spam you... much)</label>
+										<input type="text" name="email" id="email" placeholder="your@email.com" />
+									</div>
+									<div class="field">
+										<label for="message">Your Message (or favorite joke)</label>
+										<textarea name="message" id="message" rows="3" placeholder="Type something awesome..."></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message (or Telepathic Signal)" onclick="sendMessage()" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Kampala, Kulambiro <br />(Where WiFi is my best friend and the power outages are my nemesis)</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+256-788620385 <br />(Carrier pigeons also accepted, but they keep getting lost)</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">ayingaelizabeth@gmail.com</a> <br />(For business, fan mail, and cat videos)</p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter hover-effect" title="Tweets so hot they break the API"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f hover-effect" title="Where I share memes from 2012"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram hover-effect" title="90% food, 10% code screenshots"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github hover-effect" title="Where my code lives (and sometimes dies)"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Elizabeth 2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a> (but I made it sassier)</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+			
+			<script>
+				// Confetti cannon!
+				function surprise() {
+					confetti({
+						particleCount: 150,
+						spread: 70,
+						origin: { y: 0.6 }
+					});
+					
+					// Change image to something silly
+					document.querySelector('.image.main img').src = "https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif";
+					setTimeout(() => {
+						document.querySelector('.image.main img').src = "images/pic01.jpg";
+					}, 3000);
+				}
+				
+				// Top 10 ranking interaction
+				document.getElementById('top10').addEventListener('click', function() {
+					const rankings = ["#1", "#3", "#7", "#10", "Not ranked", "Ranked #∞"];
+					const randomRank = rankings[Math.floor(Math.random() * rankings.length)];
+					this.textContent = `(Actually ${randomRank}, but who's counting?)`;
+					
+					if(randomRank === "#1") {
+						confetti({
+							particleCount: 300,
+							spread: 100,
+							origin: { y: 0.6 }
+						});
+					}
+				});
+				
+				// Boring meter animation
+				window.addEventListener('load', function() {
+					const meter = document.getElementById('boring-progress');
+					let boringLevel = 5;
+					
+					const meterInterval = setInterval(() => {
+						boringLevel += Math.random() * 10 - 4; // Random fluctuation
+						boringLevel = Math.max(1, Math.min(100, boringLevel)); // Keep between 1-100
+						
+						meter.style.width = `${boringLevel}%`;
+						meter.textContent = `${Math.round(boringLevel)}% Boring`;
+						
+						// Change color based on level
+						if(boringLevel > 70) {
+							meter.style.backgroundColor = '#ff4500';
+						} else if(boringLevel > 40) {
+							meter.style.backgroundColor = '#ffa500';
+						} else {
+							meter.style.backgroundColor = '#ff69b4';
+						}
+					}, 2000);
+				});
+				
+				// Add random fact button
+				function addRandomFact() {
+					const facts = [
+						"🧠 I once debugged a problem in my dream. Woke up with the solution. (My subconscious is a better programmer than me.)",
+						"🐍 I name all my Python scripts after Harry Potter characters. Currently working on 'voldemort.py' (it keeps trying to kill my other scripts).",
+						"📅 I have a spreadsheet tracking how many times I've said 'I'll fix it later' (Spoiler: It's a lot).",
+						"🤖 My ideal pet would be a robot dog that never needs walking but can fetch coffee.",
+						"🎮 I approach life like a video game: Save often, expect bugs, and cheat codes are just 'creative solutions.'",
+						"🍌 I measure time in bananas. Meetings are either '1 banana' (short) or 'a bunch' (too long).",
+						"💾 My first computer had a floppy drive. Yes, I'm that cool."
+					];
+					
+					const randomFact = facts[Math.floor(Math.random() * facts.length)];
+					const factsList = document.getElementById('fun-facts');
+					const newItem = document.createElement('li');
+					newItem.innerHTML = randomFact;
+					factsList.appendChild(newItem);
+					
+					// Little celebration for new fact
+					confetti({
+						particleCount: 50,
+						spread: 40,
+						origin: { y: 0.6 }
+					});
+				}
+				
+				// Form submission joke
+				function sendMessage() {
+					const responses = [
+						"Message sent! (To the void, probably)",
+						"Your message has been launched into cyberspace!",
+						"Message delivered via carrier pigeon (just kidding, we used HTTP)",
+						"Your words are now traveling at the speed of light! (Or at least the speed of your WiFi)",
+						"Message sent! If you don't hear back, I'm probably napping."
+					];
+					
+					alert(responses[Math.floor(Math.random() * responses.length)]);
+				}
+				
+				// Easter egg for developers
+				console.log("%cLooking at the console? You must be a developer! 👋", "color: #ff69b4; font-size: 16px; font-weight: bold;");
+				console.log("%cWant to see something cool? Try clicking around the page!", "color: #4169e1; font-size: 14px;");
+			</script>
+
+	</body>
+</html>
